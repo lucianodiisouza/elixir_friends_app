@@ -15,6 +15,6 @@ defmodule FriendsApp.CLI.Main do
   end
 
   defp starts_menu_choice do
-    FriendsApp.CLI.MenuChoice.start()
+    FriendsApp.CLI.MenuChoice.start
   end
 end
