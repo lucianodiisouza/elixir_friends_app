@@ -3,7 +3,6 @@ defmodule Mix.Tasks.Start do
 
   @shortdoc "Start [Friends APP]"
 
-  def run(_) do
-    IO.puts("Starting application...")
-  end
+  @spec run(any) :: :eof | binary | charlist | {:error, any}
+  def run(_), do: FriendsApp.CLI.Main.start_app()
 end
