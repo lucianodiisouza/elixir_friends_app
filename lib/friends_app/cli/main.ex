@@ -3,13 +3,18 @@ defmodule FriendsApp.CLI.Main do
 
   def start_app do
     Shell.cmd("clear")
-    welcome_message
+    welcome_message()
     Shell.prompt("Press enter to continue...")
+    starts_menu_choice()
   end
 
-  def welcome_message do
+  defp welcome_message do
     Shell.info("============= Friends App =============")
     Shell.info("Welcome to your personal contacts book!")
     Shell.info("=======================================")
+  end
+
+  defp starts_menu_choice do
+    FriendsApp.CLI.MenuChoice.start()
   end
 end
