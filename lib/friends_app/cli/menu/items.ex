@@ -4,7 +4,7 @@ defmodule FriendsApp.CLI.Menu.Itens do
   def all,
     do: [
       %Menu{label: 'Add a friend', id: :create},
-      %Menu{label: 'Show a friend', id: :show},
+      %Menu{label: 'Show a friend', id: :read},
       %Menu{label: 'Update a friend', id: :update},
       %Menu{label: 'Delete a friend', id: :delete}
     ]
